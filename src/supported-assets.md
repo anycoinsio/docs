@@ -1,0 +1,216 @@
+# Supported Assets
+
+AnyCoins supports multiple blockchain assets, including Bitcoin, Ethereum, Litecoin, Tether and many more. We are continually expanding our supported assets to provide more options for our merchants and customers. If you have a specific request for an asset that is not currently supported, please contact us.
+
+You can obtain the full list of supported assets via the [`List Supported Assets`](./developer/info/list-supported-assets.md) API method.
+
+## Cryptocurrencies
+
+- **Bitcoin**: `BTC`
+- **Bitcoin Cash**: `BCH`
+- **Litecoin**: `LTC`
+- **Ethereum Blockchain**-based assets
+  - **Ethereum**: `ETH`
+  - All `ERC-20` tokens, including, but not limited to:
+    - **Tether**: `USDT (ERC-20)`
+    - **USD Coin**: `USDC (ERC-20)`
+    - **TrueUSD**: `TUSD (ERC-20)`
+    - **Dai**: `DAI (ERC-20)`
+    - **Axie**: `AXS (ERC-20)`
+    - ...
+- **Ethereum Classic**: `ETC`
+- **Binance Smart Chain**-based assets
+  - **Binance Coin**: `BNB`
+  - All `BEP-20` tokens, including, but not limited to:
+    - **BUSD**: `BUSD (BEP-20)`
+    - **Tether**: `USDT (BEP-20)`
+    - **TrueUSD**: `TUSD (BEP-20)`
+    - **Shiba Inu**: `SHIB (BEP-20)`
+    - **Dai**: `DAI (BEP-20)`
+    - **Axie**: `AXS (BEP-20)`
+    - ...
+- **Dash**: `DASH`
+- **Dogecoin**: `DOGE`
+- **Tron Blockchain**-based assets
+  - `TRX`
+  - All `TRC-20` tokens, including, but not limited to:
+    - **Ethereum**: `ETH (TRC-20)`
+    - **Tether**: `USDT (TRC-20)`
+    - **USD Coin**: `USDC (TRC-20)`
+    - **TrueUSD**: `TUSD (TRC-20)`
+    - **Dai**: `DAI (TRC-20)`
+    - **Axie**: `AXS (TRC-20)`
+    - ...
+- **Ripple**: `XRP`
+- **Stellar**: `XLM`
+- **Zcash**: `ZEC`
+
+## Fiat Currencies
+
+- `AED`: United Arab Emirates Dirham
+- `AFN`: Afghan Afghani
+- `ALL`: Albanian Lek
+- `AMD`: Armenian Dram
+- `ANG`: Netherlands Antillean Guilder
+- `AOA`: Angolan Kwanza
+- `ARS`: Argentine Peso
+- `AUD`: Australian Dollar
+- `AWG`: Aruban Florin
+- `AZN`: Azerbaijani Manat
+- `BAM`: Bosnia And Herzegovina Convertible Mark
+- `BBD`: Barbadian Dollar
+- `BDT`: Bangladeshi Taka
+- `BGN`: Bulgarian Lev
+- `BHD`: Bahraini Dinar
+- `BIF`: Burundian Franc
+- `BMD`: Bermudian Dollar
+- `BND`: Brunei Dollar
+- `BOB`: Bolivian Boliviano
+- `BRL`: Brazilian Real
+- `BSD`: Bahamian Dollar
+- `BTN`: Bhutanese Ngultrum
+- `BWP`: Botswana Pula
+- `BYN`: Belarusian Ruble
+- `BYR`: Belarusian Ruble (until 2016)
+- `BZD`: Belize Dollar
+- `CAD`: Canadian Dollar
+- `CDF`: Congolese Franc
+- `CHF`: Swiss Franc
+- `CLF`: Chilean Unit of Account
+- `CLP`: Chilean Peso
+- `CNY`: Chinese Yuan
+- `COP`: Colombian Peso
+- `CRC`: Costa Rican Colón
+- `CUC`: Cuban Convertible Peso
+- `CUP`: Cuban Peso
+- `CVE`: Cape Verdean Escudo
+- `CZK`: Czech Koruna
+- `DJF`: Djiboutian Franc
+- `DKK`: Danish Krone
+- `DOP`: Dominican Peso
+- `DZD`: Algerian Dinar
+- `EGP`: Egyptian Pound
+- `ERN`: Eritrean Nakfa
+- `ETB`: Ethiopian Birr
+- `EUR`: Euro
+- `FJD`: Fijian Dollar
+- `FKP`: Falkland Islands Pound
+- `GBP`: British Pound Sterling
+- `GEL`: Georgian Lari
+- `GGP`: Guernsey Pound
+- `GHS`: Ghanaian Cedi
+- `GIP`: Gibraltar Pound
+- `GMD`: Gambian Dalasi
+- `GNF`: Guinean Franc
+- `GTQ`: Guatemalan Quetzal
+- `GYD`: Guyanaese Dollar
+- `HKD`: Hong Kong Dollar
+- `HNL`: Honduran Lempira
+- `HRK`: Croatian Kuna
+- `HTG`: Haitian Gourde
+- `HUF`: Hungarian Forint
+- `IDR`: Indonesian Rupiah
+- `ILS`: Israeli New Sheqel
+- `IMP`: Isle of Man Pound
+- `INR`: Indian Rupee
+- `IQD`: Iraqi Dinar
+- `IRR`: Iranian Rial
+- `ISK`: Icelandic Króna
+- `JEP`: Jersey Pound
+- `JMD`: Jamaican Dollar
+- `JOD`: Jordanian Dinar
+- `JPY`: Japanese Yen
+- `KES`: Kenyan Shilling
+- `KGS`: Kyrgyzstani Som
+- `KHR`: Cambodian Riel
+- `KMF`: Comorian Franc
+- `KPW`: North Korean Won
+- `KRW`: South Korean Won
+- `KWD`: Kuwaiti Dinar
+- `KYD`: Cayman Islands Dollar
+- `KZT`: Kazakhstani Tenge
+- `LAK`: Laotian Kip
+- `LBP`: Lebanese Pound
+- `LKR`: Sri Lankan Rupee
+- `LRD`: Liberian Dollar
+- `LSL`: Lesotho Loti
+- `LTL`: Lithuanian Litas
+- `LVL`: Latvian Lats
+- `LYD`: Libyan Dinar
+- `MAD`: Moroccan Dirham
+- `MDL`: Moldovan Leu
+- `MGA`: Malagasy Ariary
+- `MKD`: Macedonian Denar
+- `MMK`: Myanma Kyat
+- `MNT`: Mongolian Tugrik
+- `MOP`: Macanese Pataca
+- `MRO`: Mauritanian Ouguiya
+- `MUR`: Mauritian Rupee
+- `MVR`: Maldivian Rufiyaa
+- `MWK`: Malawian Kwacha
+- `MXN`: Mexican Peso
+- `MYR`: Malaysian Ringgit
+- `MZN`: Mozambican Metical
+- `NAD`: Namibian Dollar
+- `NGN`: Nigerian Naira
+- `NIO`: Nicaraguan Córdoba
+- `NOK`: Norwegian Krone
+- `NPR`: Nepalese Rupee
+- `NZD`: New Zealand Dollar
+- `OMR`: Omani Rial
+- `PAB`: Panamanian Balboa
+- `PEN`: Peruvian Nuevo Sol
+- `PGK`: Papua New Guinean Kina
+- `PHP`: Philippine Peso
+- `PKR`: Pakistani Rupee
+- `PLN`: Polish Zloty
+- `PYG`: Paraguayan Guarani
+- `QAR`: Qatari Rial
+- `RON`: Romanian Leu
+- `RSD`: Serbian Dinar
+- `RUB`: Russian Ruble
+- `RWF`: Rwandan Franc
+- `SAR`: Saudi Riyal
+- `SBD`: Solomon Islands Dollar
+- `SCR`: Seychellois Rupee
+- `SDG`: Sudanese Pound
+- `SEK`: Swedish Krona
+- `SGD`: Singapore Dollar
+- `SHP`: Saint Helena Pound
+- `SLL`: Sierra Leonean Leone
+- `SOS`: Somali Shilling
+- `SRD`: Surinamese Dollar
+- `STD`: São Tomé and Príncipe Dobra
+- `SVC`: Salvadoran Colón
+- `SYP`: Syrian Pound
+- `SZL`: Swazi Lilangeni
+- `THB`: Thai Baht
+- `TJS`: Tajikistani Somoni
+- `TMT`: Turkmenistani Manat
+- `TND`: Tunisian Dinar
+- `TOP`: Tongan Paʻanga
+- `TRY`: Turkish Lira
+- `TTD`: Trinidad and Tobago Dollar
+- `TWD`: New Taiwan Dollar
+- `TZS`: Tanzanian Shilling
+- `UAH`: Ukrainian Hryvnia
+- `UGX`: Ugandan Shilling
+- `USD`: US Dollar
+- `UYU`: Uruguayan Peso
+- `UZS`: Uzbekistan Som
+- `VEF`: Venezuelan Bolívar Fuerte
+- `VES`: Venezuelan Bolívar Soberano
+- `VND`: Vietnamese Dong
+- `VUV`: Vanuatu Vatu
+- `WST`: Samoan Tala
+- `XAF`: CFA Franc BEAC
+- `XAG`: Silver (one troy ounce)
+- `XAU`: Gold (one troy ounce)
+- `XCD`: East Caribbean Dollar
+- `XDR`: Special Drawing Rights
+- `XOF`: CFA Franc BCEAO
+- `XPF`: CFP Franc
+- `YER`: Yemeni Rial
+- `ZAR`: South African Rand
+- `ZMW`: Zambian Kwacha
+- `ZWL`: Zimbabwean Dollar
