@@ -17,18 +17,22 @@ AnyCoins generates the signature for each event using the following process:
    ```json
    {
      "id": "faf7a731-d9ed-4235-8dad-99c16aa9fd8a",
-     "event": "DEPOSIT_RECEIVED",
+     "event": "DEPOSIT_COMPLETED",
      "happened_at": "2023-10-03 02:10:50 +0300",
      "data": {
-       "customer_id": "1",
+       "deposit_id": "faf7a731-d9ed-4235-8dad-99c16aa9fd8a",
+       "customer_id": "420",
        "amount": "603015.07537688",
-       "currency": {
-         "name": "Shiba Inu",
-         "symbol": "SHIB",
-         "blockchain": "ethereum",
-         "is_token": true
-       },
-       "amount_eur": 4.2
+       "coin": {
+         "id": "b18d329f-066f-43ea-9c59-53328e473685",
+         "name": "Tether (TRC20)",
+         "symbol": "USDT",
+         "blockchain": "tron",
+         "network": "mainnet",
+         "is_token": true,
+         "token_contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+         "price_eur": "0.9488584359"
+       }
      }
    }
    ```

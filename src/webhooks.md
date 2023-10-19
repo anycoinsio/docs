@@ -1,16 +1,16 @@
 # Webhooks
 
-Webhooks are an integral part of the AnyCoins platform, designed to provide real-time notifications regarding important events associated with your merchant account. Currently, we support two types of webhook events: `Deposit Received` and `Withdrawal Completed`. These webhooks help in automating the flow of information and ensure you are promptly informed about crucial transactional activities. Here's an overview of the supported webhook events:
+Webhooks are an integral part of the AnyCoins platform, designed to provide real-time notifications regarding important events associated with your merchant account. Currently, we support two types of webhook events: `Deposit Completed` and `Withdrawal Completed`. These webhooks help in automating the flow of information and ensure you are promptly informed about crucial transactional activities. Here's an overview of the supported webhook events:
 
-## Deposit Received
+## Deposit Completed
 
-The `Deposit Received` webhook is triggered whenever a deposit to your AnyCoins account is confirmed by the network. This webhook provides immediate notification, allowing you to track incoming funds efficiently.
+The `Deposit Completed` webhook is triggered whenever a deposit to your AnyCoins account is confirmed by the network. This webhook provides immediate notification, allowing you to track incoming funds efficiently.
 
 ### Webhook Payload
 
-- **Transaction ID**: The unique identifier for the deposit transaction.
+- **Deposit ID**: The unique identifier for the deposit in our system.
 - **Amount**: The amount deposited.
-- **Currency**: The cryptocurrency in which the deposit was made.
+- **Coin**: The cryptocurrency in which the deposit was made.
 - **Timestamp**: The time at which the deposit was confirmed by the network.
 
 ### Usage
@@ -25,7 +25,7 @@ The `Withdrawal Completed` webhook is sent once a withdrawal request from your A
 
 ### Webhook Payload
 
-- **Transaction ID**: The unique identifier for the withdrawal transaction.
+- **Wthdrawal ID**: The unique identifier for the withdrawal.
 - **Amount**: The amount withdrawn.
 - **Currency**: The cryptocurrency in which the withdrawal was made.
 - **Destination Wallet Address**: The wallet address to which the funds were sent.

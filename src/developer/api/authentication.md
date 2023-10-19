@@ -2,19 +2,19 @@
 
 Authentication is a critical component in interacting with the AnyCoins API, ensuring that only authorized users can fetch, manipulate, and interact with their respective account data.
 
-Every API request must include an Authorization header with a valid API key to be processed successfully. Your API key is confidential and should be stored securely. Do not expose the key in client-side code or public repositories.
+Every API request must include an Authorization header with a valid Access Token to be processed successfully. Your Access Token is confidential and should be stored securely. Do not expose the key in client-side code or public repositories.
 
 <div class="warning">
-Sharing your API key can lead to unauthorized access to your account. Always keep your API keys confidential.
+Sharing your Access Token can lead to unauthorized access to your account. Always keep your Access Tokens confidential.
 </div>
 
-If you need assistance with API key management or encounter any issues, please contact us at [info@anycoins.io](mailto:info@anycoins.io).
+If you need assistance with Access Token management or encounter any issues, please contact us at [info@anycoins.io](mailto:info@anycoins.io).
 
 ## Authentication Process
 
-1. **API Key Generation**:
+1. **Access Token Generation**:
 
-   - [Obtain an API key](./obtaining-credentials.md) from your AnyCoins account.
+   - [Obtain an Access Token](./obtaining-credentials.md) from your AnyCoins account.
 
 2. **Making Authenticated Requests**:
 
@@ -25,20 +25,20 @@ If you need assistance with API key management or encounter any issues, please c
        -H 'Authorization: Your-API-Key'
    ```
 
-## Revoking API Keys
+## Revoking Access Tokens
 
-You can revoke an API key anytime from your AnyCoins account to cease its access to the API.
+You can revoke an Access Token anytime from your AnyCoins account to cease its access to the API.
 
 ## Security Best Practices
 
 - **Confidentiality**:
 
-  - It's imperative to keep your API key secret to prevent unauthorized access to your API.
-  - Never expose the API key in publicly accessible areas such as client-side code or public repositories.
+  - It's imperative to keep your Access Token secret to prevent unauthorized access to your API.
+  - Never expose the Access Token in publicly accessible areas such as client-side code or public repositories.
 
 - **Environment Variables**:
 
-  - Store your API key in environment variables or in a secure configuration file that is ignored by version control systems.
+  - Store your Access Token in environment variables or in a secure configuration file that is ignored by version control systems.
 
 - **Key Rotation**:
-  - Regularly rotating API keys minimizes the risk in case a key gets compromised.
+  - Regularly rotating Access Tokens minimizes the risk in case a key gets compromised.

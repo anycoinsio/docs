@@ -2,6 +2,12 @@
 
 To interact securely with the AnyCoins platform, two types of credentials are utilized: an Access Token and a Signature Key.
 
+<div class="warning">
+The only way to obtain the credentials right now is to ask your account manager.
+
+We working hard to give you a merchant interface soon, thank you for your patience.
+</div>
+
 ## Access Token
 
 The Access Token is essential for making authenticated requests to the AnyCoins API. Once logged in, you can generate an Access Token from your account dashboard, which should be included in the `Authorization` header when making API requests.

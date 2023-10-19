@@ -31,13 +31,12 @@ The Payment Form Deposit workflow is crafted for e-commerce transactions where a
 
 1. **Payment Form Generation**:
 
-   - Specify the exact amount due for the order and generate a payment form using the AnyCoins platform.
+   - Specify the exact amount due for the order and initiate the Deposit process using our API. You will get the URL of the oayment form in a response.
    - The payment form will display the cryptocurrency amount required to complete the transaction.
 
 2. **Customer Completes Payment**:
 
-   - Your customers fill out the payment form and submit the cryptocurrency payment.
-   - The payment form ensures that the cryptocurrency amount matches the exact amount specified in the order.
+   - Your customers sees the payment form and submit the cryptocurrency payment.
 
 3. **Transaction Confirmation**:
 
