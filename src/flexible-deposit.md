@@ -5,7 +5,7 @@
 ## Request
 
 ```plaintext
-POST https://pay.anycoins.io/api/deposits/free_amount
+POST https://anycoins.io/api/deposits/free_amount
 ```
 
 The method takes the following parameters in a JSON body:

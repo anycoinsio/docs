@@ -9,8 +9,8 @@
 - [Operational Workflows]()
   - [Deposits](./deposits.md)
   - [Withdrawals](./withdrawals.md)
+  - [Swaps](./swaps.md)
   - [Webhooks](./webhooks.md)
-  - [Exchange and Consolidation]()
 
 # Developer Guide
 
@@ -31,10 +31,14 @@
 - [Deposits]()
   - [Flexible Amount Deposit](./developer/deposits/flexible.md)
   - [Deposit via Payment Form]()
-  - [Check Deposit Status]()
+  - [Check Deposit State]()
+- [Swaps]()
+  - [Simple Swap](./developer/swaps/simple.md)
+  - [Check Swap State](./developer/swaps/state.md)
 - [Withdrawals]()
   - [Withdraw Consolidated Amount]()
-  - [Check Withdrawal Status]()
+  - [Check Withdrawal State]()
 - [Webhooks]()
   - [Deposit Completed](./developer/webhooks/events/deposit-completed.md)
   - [Withdrawal Completed]()
+  - [Swap Finalized](./developer/webhooks/events/swap-finalized.md)

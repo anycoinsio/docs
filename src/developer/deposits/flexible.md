@@ -7,7 +7,7 @@ This endpoint allows for the creation of a deposit request with a flexible amoun
 ## Request
 
 ```plaintext
-POST https://pay.anycoins.io/api/deposits/free_amount
+POST https://anycoins.io/api/deposits/free_amount
 ```
 
 This method accepts the following parameters in the JSON body:
@@ -38,7 +38,7 @@ Replace the `Authorization` header value with your API key.
 curl -X POST \
   -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
   -d '{"coin_id": "b18d329f-066f-43ea-9c59-53328e473685","customer_id":"420"}'
-  https://pay.anycoins.io/api/deposits/free_amount
+  https://anycoins.io/api/deposits/free_amount
 ```
 
 ## Example Response

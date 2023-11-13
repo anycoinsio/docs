@@ -21,7 +21,7 @@ If you need assistance with Access Token management or encounter any issues, ple
    - Include the `Authorization` header in your HTTP requests with the value being `<Your-API-Key>`.
 
    ```bash
-   curl 'https://pay.anycoins.io/api/coins' \
+   curl 'https://anycoins.io/api/coins' \
        -H 'Authorization: Your-API-Key'
    ```
 
