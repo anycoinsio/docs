@@ -27,7 +27,7 @@ This method accepts the following parameters in the JSON body:
 ## Response Schema
 
 - `id`: The ID of the Deposit.
-- `address`: A string containing the payment address.
+- `address`: A string containing the ent address.
 - `coin`: An object with details about the expected deposit coin (or token).
 
 ## Example Request

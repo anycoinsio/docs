@@ -1,4 +1,4 @@
-# Check Swap State
+# Get Swap
 
 ## Overview
 
@@ -25,7 +25,7 @@ The response for this endpoint returns a SwapResponse object, which includes the
 - `outAddress`: A string representing the address where the output coin will be sent.
 - `state`: A string indicating the current state of the swap (e.g., `pending`, `completed`, `failed`).
 - `createdAt`: A timestamp indicating when the swap was created.
-- `finalizedAt`: A timestamp indicating when the swap was completed or canceled. This field will be null if the swap is still in progress.
+- `stateChangedAt`: Timestamp of when the swap state was last time changed.
 
 ## Example Request
 
@@ -68,6 +68,6 @@ curl -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
   "outAddress": "0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe",
   "state": "Pending",
   "createdAt": "2023-11-11T12:00:00Z",
-  "finalizedAt": null
+  "stateChangedAt": "2023-11-11T12:00:00Z",
 }
 ```

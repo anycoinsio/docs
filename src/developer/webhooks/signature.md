@@ -12,34 +12,10 @@ AnyCoins generates the signature for each event using the following process:
 
    Utilize the entire JSON object representing the event as received in the POST request body.
 
-   **Example Event JSON**:
-
-   ```json
-   {
-     "id": "faf7a731-d9ed-4235-8dad-99c16aa9fd8a",
-     "event": "DEPOSIT_COMPLETED",
-     "happened_at": "2023-10-03 02:10:50 +0300",
-     "data": {
-       "deposit_id": "faf7a731-d9ed-4235-8dad-99c16aa9fd8a",
-       "customer_id": "420",
-       "amount": "603015.07537688",
-       "coin": {
-         "id": "b18d329f-066f-43ea-9c59-53328e473685",
-         "name": "Tether (TRC20)",
-         "symbol": "USDT",
-         "blockchain": "tron",
-         "network": "mainnet",
-         "is_token": true,
-         "token_contract_address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
-         "price_eur": "0.9488584359"
-       }
-     }
-   }
-   ```
 
 2. **Hash Generation**
 
-   - Apply the HMAC algorithm with SHA-256, using the private signature key provided by AnyCoins, to hash the raw JSON string.
+   - Apply the HMAC algorithm with SHA-256, using the user's private signature key, to hash the raw JSON string.
    - The resulting hash is the signature for the event.
 
    **Example**:

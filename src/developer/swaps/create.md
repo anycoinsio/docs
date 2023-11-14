@@ -1,4 +1,4 @@
-# Simple Swap
+# Create Swap
 
 ## Overview
 
@@ -35,7 +35,7 @@ The response includes details about the swap transaction:
 - `outAddress`: The address where the output coin will be received.
 - `state`: The current state of the swap transaction.
 - `createdAt`: Timestamp of when the swap was created.
-- `finalizedAt`: Timestamp of when the swap was finalized (if applicable).
+- `stateChangedAt`: Timestamp of when the swap state was last time changed.
 
 ## Example Request
 
@@ -69,17 +69,19 @@ curl -X POST \
     "outAddress": "TC1LrufbG1spBUE1v6fKem4PAaCGm7ah7S",
     "state": "Pending",
     "createdAt": "2023-04-05T12:34:56.789Z",
-    "finalizedAt": null
+    "stateChangedAt": "2023-04-05T12:34:56.789Z"
 }
 ```
-
-The `finalizedAt` field will be populated with a timestamp once the swap is complete or canceled. Until then, it remains `null`.
 
 ## Notes
 
 - Ensure that both `inCoinId` and `outCoinId` are valid and have swap functionalities enabled.
 - The `outAddress` must be compatible with the `outCoinId` specified.
-- Monitor the `state` field to track the progress of your swap.
+
+## Next Steps
+
+- Transfer the desired amount of coins to the `inAddress`. The swap will automatically start after your transaction is confirmed.
+- You will receive a [`Swap Completed`](../webhooks/events/swap-completed.md) webhook once the swap is processed.
 
 ## Best Practices
 

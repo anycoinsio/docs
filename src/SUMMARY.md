@@ -12,13 +12,12 @@
   - [Swaps](./swaps.md)
   - [Webhooks](./webhooks.md)
 
-# Developer Guide
+# Getting Started
 
-- [Getting Started]()
-  - [Obtaining Credentials](./developer/api/obtaining-credentials.md)
-  - [API Authentication](./developer/api/authentication.md)
-  - [Rate Limiting](./developer/api/rate-limiting.md)
-  - [Webhook Signature](./developer/webhooks/signature.md)
+- [Obtaining Credentials](./developer/api/obtaining-credentials.md)
+- [API Authentication](./developer/api/authentication.md)
+- [Rate Limiting](./developer/api/rate-limiting.md)
+- [Webhook Signature](./developer/webhooks/signature.md)
     - [C# Example](./developer/webhooks/signature/csharp.md)
     - [Go Example](./developer/webhooks/signature/go.md)
     - [JavaScript Example](./developer/webhooks/signature/javascript.md)
@@ -26,19 +25,24 @@
     - [Python Example](./developer/webhooks/signature/python.md)
     - [Ruby Example](./developer/webhooks/signature/ruby.md)
     - [Rust Example](./developer/webhooks/signature/rust.md)
+
+# API Endpoints
+
 - [Informational Endpoints]()
   - [List Supported Assets](./developer/info/list-supported-assets.md)
 - [Deposits]()
   - [Flexible Amount Deposit](./developer/deposits/flexible.md)
   - [Deposit via Payment Form]()
-  - [Check Deposit State]()
+  - [Get Deposit]()
 - [Swaps]()
-  - [Simple Swap](./developer/swaps/simple.md)
-  - [Check Swap State](./developer/swaps/state.md)
+  - [Create Swap](./developer/swaps/create.md)
+  - [Get Swap](./developer/swaps/get.md)
 - [Withdrawals]()
   - [Withdraw Consolidated Amount]()
-  - [Check Withdrawal State]()
-- [Webhooks]()
-  - [Deposit Completed](./developer/webhooks/events/deposit-completed.md)
-  - [Withdrawal Completed]()
-  - [Swap Finalized](./developer/webhooks/events/swap-finalized.md)
+  - [Get Withdrawal]()
+
+# Webhooks
+
+- [Deposit Completed](./developer/webhooks/events/deposit-completed.md)
+- [Withdrawal Completed]()
+- [Swap Completed](./developer/webhooks/events/swap-completed.md)

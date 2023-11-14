@@ -1,6 +1,9 @@
 # Webhooks
 
-Webhooks are an integral part of the AnyCoins platform, designed to provide real-time notifications regarding important events associated with your merchant account. Currently, we support two types of webhook events: `Deposit Completed` and `Withdrawal Completed`. These webhooks help in automating the flow of information and ensure you are promptly informed about crucial transactional activities. Here's an overview of the supported webhook events:
+Webhooks are an integral part of the AnyCoins platform, designed to provide real-time notifications regarding important events associated with your merchant account. Here's a list of the supported webhook events:
+
+* [Deposit Completed](./developer/webhooks/events/deposit-completed.md)
+* [Swap Completed](./developer/webhooks/events/swap-completed.md)
 
 ## Deposit Completed
 
