@@ -2,11 +2,7 @@
 
 To interact securely with the AnyCoins platform, two types of credentials are utilized: an Access Token and a Signature Key.
 
-<div class="warning">
-The only way to obtain the credentials right now is to ask your account manager.
-
-We working hard to give you a merchant interface soon, thank you for your patience.
-</div>
+To obtain your credentials sign in into your account at [anycoins.io](https://anycoins.io).
 
 ## Access Token
 
