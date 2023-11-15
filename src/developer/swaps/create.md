@@ -34,6 +34,8 @@ The response includes details about the swap transaction:
 - `inAddress`: The address to send the input coin to.
 - `outAddress`: The address where the output coin will be received.
 - `state`: The current state of the swap transaction.
+- `inAmount`: The amount of input coins that will be swapped (`0` in a case of a swap creation)
+- `outAmount`: The amount of output coins that will be received (`0` in a case of a swap creation)
 - `createdAt`: Timestamp of when the swap was created.
 - `stateChangedAt`: Timestamp of when the swap state was last time changed.
 
@@ -68,6 +70,8 @@ curl -X POST \
     "inAddress": "1BoatSLRHtKNngkdXEeobR76b53LETtpyT",
     "outAddress": "TC1LrufbG1spBUE1v6fKem4PAaCGm7ah7S",
     "state": "Pending",
+    "inAmount": "0.0",
+    "outAmount": "0.0",
     "createdAt": "2023-04-05T12:34:56.789Z",
     "stateChangedAt": "2023-04-05T12:34:56.789Z"
 }

@@ -16,8 +16,8 @@ The payload of the `Swap Completed` webhook contains detailed information about 
 - `outCoin`: Details of the output coin, similar to InCoin.
 - `inAddress`: The input address where the coins were sent from.
 - `outAddress`: The output address where the coins were sent to.
-- `amountIn`: The amount of input coins that were swapped.
-- `amountOut`: The amount of output coins that were received.
+- `inAmount`: The amount of input coins that were swapped.
+- `outAmount`: The amount of output coins that were received.
 - `createdAt`: Timestamp of when the swap was created.
 - `stateChangedAt`: Timestamp of when the swap state changed to `Completed`.
 
@@ -47,7 +47,7 @@ The `Swap Completed` webhook can be used for:
 #### Raw
 
 ```
-{"id":"d17f5192-f56f-4cf8-8e89-f1dca83c3f69","event":"SwapCompleted","happenedAt":"2023-11-13T21:34:31.183171Z","data":{"id":"7a382ff7-d7d1-457b-b3bc-b5102f2d4dfb","inCoin":{"id":"611ba4b6-09e4-4ead-bc0e-6c6b970810f7","name":"Bitcoin","symbol":"BTC","blockchain":"Bitcoin","isEnabled":true,"swap":{"isInEnabled":true,"isOutEnabled":true}},"outCoin":{"id":"130f1fe6-09ad-4118-89f7-ab8e5612b13d","name":"Tether (TRC20)","symbol":"USDT","blockchain":"Tron","isEnabled":true,"tokenContractAddress":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","swap":{"isInEnabled":true,"isOutEnabled":true}},"inAddress":"1PdzMQepZGS6TQmfB6vWMxhmE8kWtv833m","outAddress":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","state":"Completed","amountIn":"0.0042","amountOut":"0.069","createdAt":"2023-11-11T01:17:17.841176Z","stateChangedAt":"2023-11-13T21:34:31.183171Z"}}
+{"id":"d17f5192-f56f-4cf8-8e89-f1dca83c3f69","event":"SwapCompleted","happenedAt":"2023-11-13T21:34:31.183171Z","data":{"id":"7a382ff7-d7d1-457b-b3bc-b5102f2d4dfb","inCoin":{"id":"611ba4b6-09e4-4ead-bc0e-6c6b970810f7","name":"Bitcoin","symbol":"BTC","blockchain":"Bitcoin","isEnabled":true,"swap":{"isInEnabled":true,"isOutEnabled":true}},"outCoin":{"id":"130f1fe6-09ad-4118-89f7-ab8e5612b13d","name":"Tether (TRC20)","symbol":"USDT","blockchain":"Tron","isEnabled":true,"tokenContractAddress":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","swap":{"isInEnabled":true,"isOutEnabled":true}},"inAddress":"1PdzMQepZGS6TQmfB6vWMxhmE8kWtv833m","outAddress":"TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t","state":"Completed","inAmount":"0.0042","outAmount":"0.069","createdAt":"2023-11-11T01:17:17.841176Z","stateChangedAt":"2023-11-13T21:34:31.183171Z"}}
 ```
 
 #### Pretty
@@ -85,8 +85,8 @@ The `Swap Completed` webhook can be used for:
     "inAddress": "1PdzMQepZGS6TQmfB6vWMxhmE8kWtv833m",
     "outAddress": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
     "state": "Completed",
-    "amountIn": "0.0042",
-    "amountOut": "0.069",
+    "inAmount": "0.0042",
+    "outAmount": "0.069",
     "createdAt": "2023-11-11T01:17:17.841176Z",
     "stateChangedAt": "2023-11-13T21:34:31.183171Z"
   }

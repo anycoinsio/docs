@@ -24,6 +24,8 @@ The response for this endpoint returns a SwapResponse object, which includes the
 - `inAddress`: A string representing the address for sending the input coin.
 - `outAddress`: A string representing the address where the output coin will be sent.
 - `state`: A string indicating the current state of the swap (e.g., `pending`, `completed`, `failed`).
+- `inAmount`: The amount of input coins that were swapped.
+- `outAmount`: The amount of output coins that were received.
 - `createdAt`: A timestamp indicating when the swap was created.
 - `stateChangedAt`: Timestamp of when the swap state was last time changed.
 
@@ -67,6 +69,8 @@ curl -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
   "inAddress": "1BoatSLRHtKNngkdXEeobR76b53LETtpyT",
   "outAddress": "0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe",
   "state": "Pending",
+  "inAmount": "0.0042",
+  "outAmount": "0.069",
   "createdAt": "2023-11-11T12:00:00Z",
   "stateChangedAt": "2023-11-11T12:00:00Z",
 }
