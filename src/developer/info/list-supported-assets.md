@@ -15,7 +15,7 @@ If you haven't found the asset you were looking for or have any other questions,
 ## Request
 
 ```plaintext
-GET https://anycoins.io/api/coins
+POST https://api.anycoins.io/coins/ListCoins
 ```
 
 The method takes no parameters.
@@ -39,8 +39,9 @@ Each element within the coins array is an object representing a particular coin 
 Replace the `Authorization` header value with your API key.
 
 ```bash
-curl -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
-    https://anycoins.io/api/coins
+curl -x POST \
+    -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
+    https://api.anycoins.io/coins/ListCoins
 ```
 
 ## Example Response

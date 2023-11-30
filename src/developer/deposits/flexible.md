@@ -7,22 +7,22 @@ This endpoint allows for the creation of a deposit request with a flexible amoun
 ## Request
 
 ```plaintext
-POST https://anycoins.io/api/deposits/free_amount
+POST https://api.anycoins.io/deposits/CreateFreeAmountDeposit
 ```
 
 This method accepts the following parameters in the JSON body:
 
 ```json
 {
-    "coin_id": "b18d329f-066f-43ea-9c59-53328e473685",
-    "customer_id": "420",
-    "permanent_address": false
+    "coinId": "b18d329f-066f-43ea-9c59-53328e473685",
+    "customerId": "420",
+    "permanentAddress": false
 }
 ```
 
-- `coin_id`: The ID of the coin (or token), which can be obtained from the [`List Supported Assets`](../info/list-supported-assets.md) method. **Required**.
-- `customer_id`: A unique string identifier for the customer within your system. **Required**.
-- `permanent_address`: A boolean flag (set to `false` by default) that instructs our processing to reserve a static address for the customer. If this flag is not set, the address pool will be used. For economic reasons, we recommend setting this flag only in special cases, such as for your VIP customers.
+- `coinsId`: The ID of the coin (or token), which can be obtained from the [`List Supported Assets`](../info/list-supported-assets.md) method. **Required**.
+- `customerId`: A unique string identifier for the customer within your system. **Required**.
+- `permanentAddress`: A boolean flag (set to `false` by default) that instructs our processing to reserve a static address for the customer. If this flag is not set, the address pool will be used. For economic reasons, we recommend setting this flag only in special cases, such as for your VIP customers.
 
 ## Response Schema
 
@@ -37,8 +37,8 @@ Replace the `Authorization` header value with your API key.
 ```bash
 curl -X POST \
   -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
-  -d '{"coin_id": "b18d329f-066f-43ea-9c59-53328e473685","customer_id":"420"}'
-  https://anycoins.io/api/deposits/free_amount
+  -d '{"coinId": "b18d329f-066f-43ea-9c59-53328e473685","customerId":"420"}'
+  https://api.anycoins.io/deposits/CreateFreeAmountDeposit
 ```
 
 ## Example Response

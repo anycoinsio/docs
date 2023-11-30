@@ -2,15 +2,15 @@
 
 ## Overview
 
-The `GET /api/swaps/:id` endpoint is designed to allow users to check the current state of an existing swap. This is essential for tracking the progress of a swap transaction and for auditing purposes.
+The `POST /swaps/GetSwap` endpoint is designed to allow users to check the current state of an existing swap. This is essential for tracking the progress of a swap transaction and for auditing purposes.
 
 ## Request
 
 ```plaintext
-GET https://anycoins.io/api/swaps/:id
+POST https://api.anycoins.io/swaps/GetSwap
 ```
 
-This method requires the unique identifier of the swap transaction as a URL parameter.
+This method requires the unique identifier of the swap transaction in a JSON body.
 
 - `:id`: The unique identifier (UUID) of the swap transaction. **Required.**
 
@@ -31,11 +31,13 @@ The response for this endpoint returns a SwapResponse object, which includes the
 
 ## Example Request
 
-Replace `:id` in the URL with the actual ID of the swap transaction and the Authorization header value with your API key.
+Replace id in the data with the actual ID of the swap transaction and the Authorization header value with your API key.
 
 ```bash
-curl -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
-    https://anycoins.io/api/swaps/16aeb729-46cd-4e98-bcca-d0619e7b1e23
+curl -X POST \
+    -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
+    -d '{"id": "16aeb729-46cd-4e98-bcca-d0619e7b1e23"}'
+    https://api.anycoins.io/swaps/GetSwap
 ```
 
 ## Example Response

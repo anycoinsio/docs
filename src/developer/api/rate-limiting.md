@@ -2,8 +2,7 @@
 
 To maintain the reliability of the AnyCoins API, we've set default rate limits:
 
-- `POST`: 2 requests/second
-- `GET`: 10 requests/second
+- 5 requests/second
 
 <div class="warning">
 Limits apply <strong>per API key</strong>.
