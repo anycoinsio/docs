@@ -47,7 +47,7 @@ Replace the `Authorization` header value with your API key.
 curl -X POST \
     -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
     -d '{"inCoinId": "1d535909-de36-4d81-98f4-9de3a3cf4b20", "outCoinId": "b18d329f-066f-43ea-9c59-53328e473685", "outAddress": "TC1LrufbG1spBUE1v6fKem4PAaCGm7ah7S"}'
-    https://api.anycoins.io/swaps
+    https://api.anycoins.io/swaps/CreateSwap
 ```
 
 ## Example Response

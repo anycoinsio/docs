@@ -1,6 +1,6 @@
-# Deposit Completed
+# Deposit Processing
 
-The `Deposit Completed` webhook is triggered whenever a deposit to your AnyCoins account is confirmed by the network. This webhook provides immediate notification, allowing you to track incoming funds efficiently.
+The `Deposit Processing` webhook is triggered whenever a deposit to your AnyCoins account is confirmed by the network and is currently swapping to the target coin. You will not receive this webhook if no swap needed.
 
 <div class="warning">
 Do not forget to <a href="../signature.html">check the signature</a> before processing a webhook!
@@ -13,7 +13,6 @@ Do not forget to <a href="../signature.html">check the signature</a> before proc
 - `outCoin`: An object containing details about the output coin.
 - `inAddress`: The address to send the input coin to.
 - `inAmount`: The amount of `in` coins (tokens) user has sent.
-- `outAmount`: The amount of `out` coins (tokens) to deposit on merchant's account.
 - `state`: The current state of the deposit.
 - `merchantCustomerId`: ID of the customer on merchant's side.
 - `merchantDepositId`: ID of the deposit on merchant's side.
@@ -45,7 +44,7 @@ Do not forget to <a href="../signature.html">check the signature</a> before proc
 ```json
 {
   "id": "faf7a731-d9ed-4235-8dad-99c16aa9fd8a",
-  "event": "DepositCompleted",
+  "event": "DepositProcessing",
   "happenedAt": "2023-10-04T03:46:18+03:00",
   "data": {
     "id": "2fc77d13-88ee-4517-881e-b15daaf7c3b5",
@@ -84,8 +83,7 @@ Do not forget to <a href="../signature.html">check the signature</a> before proc
     },
     "inAddress": "TYWjHGvEu4rrCeqvtTwcQC58NWTgWuM5cb",
     "inAmount": "100.23",
-    "outAmount": "100.23",
-    "state": "Completed",
+    "state": "Processing",
     "merchantCustomerId": "420",
     "merchantDepositId": "23069",
     "createdAt": "2024-02-05T20:09:25.385987Z",

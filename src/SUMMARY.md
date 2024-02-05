@@ -30,13 +30,13 @@
 
 - [Informational Endpoints]()
   - [List Supported Assets](./developer/info/list-supported-assets.md)
-- [Deposits]()
-  - [Flexible Amount Deposit](./developer/deposits/flexible.md)
-  - [Deposit via Payment Form]()
-  - [Get Deposit]()
 - [Swaps]()
   - [Create Swap](./developer/swaps/create.md)
   - [Get Swap](./developer/swaps/get.md)
+- [Deposits]()
+  - [Flexible Amount Deposit](./developer/deposits/flexible.md)
+  - [Get Deposit](./developer/deposits/get.md)
+  - [Deposit via Payment Form]()
 - [Withdrawals]()
   - [Withdraw Consolidated Amount]()
   - [Get Withdrawal]()
@@ -44,5 +44,7 @@
 # Webhooks
 
 - [Deposit Completed](./developer/webhooks/events/deposit-completed.md)
+- [Deposit Expired](./developer/webhooks/events/deposit-expired.md)
+- [Deposit Processing](./developer/webhooks/events/deposit-processing.md)
 - [Withdrawal Completed]()
 - [Swap Completed](./developer/webhooks/events/swap-completed.md)

@@ -14,9 +14,7 @@ func verifySignature(signature, eventJson, signatureKey string) bool {
     h := hmac.New(sha256.New, []byte(signatureKey))
     h.Write([]byte(eventJson))
 
-    computedSignature := hex.EncodeToString(h.Sum(nil))
-
-    return computedSignature == signature
+    return hex.EncodeToString(h.Sum(nil)) == signature
 }
 
 func main() {

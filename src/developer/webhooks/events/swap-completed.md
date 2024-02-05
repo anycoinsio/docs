@@ -3,7 +3,7 @@
 The `Swap Completed` webhook is sent once a swap request has been processed and the funds have been transferred to the specified output address.
 
 <div class="warning">
-Do not forget to <a href="../signature.html">check the webhook signature</a> before processing!
+Do not forget to <a href="../signature.html">check the signature</a> before processing a webhook!
 </div>
 
 ## Webhook Payload

@@ -10,4 +10,4 @@ Limits apply <strong>per API key</strong>.
 
 Exceeding them will trigger a response with `429 Too Many Requests` status code.
 
-If you need assistance with rate limiting or encounter any issues, please contact us at [info@anycoins.io](mailto:info@anycoins.io).
+If you need assistance with rate limiting or encounter any issues, please contact us at [hello@anycoins.io](mailto:hello@anycoins.io).

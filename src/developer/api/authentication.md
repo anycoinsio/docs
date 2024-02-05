@@ -8,7 +8,7 @@ Every API request must include an Authorization header with a valid Access Token
 Sharing your Access Token can lead to unauthorized access to your account. Always keep your Access Tokens confidential.
 </div>
 
-If you need assistance with Access Token management or encounter any issues, please contact us at [info@anycoins.io](mailto:info@anycoins.io).
+If you need assistance with Access Token management or encounter any issues, please contact us at [hello@anycoins.io](mailto:info@anycoins.io).
 
 ## Authentication Process
 

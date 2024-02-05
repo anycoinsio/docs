@@ -11,9 +11,8 @@ use crypto::sha2::Sha256;
 fn verify_signature(signature: &str, event_json: &str, signature_key: &str) -> bool {
     let mut hmac = Hmac::new(Sha256::new(), signature_key.as_bytes());
     hmac.input(event_json.as_bytes());
-    let result = hmac.result();
-    let computed_signature = hex::encode(result.code());
-    computed_signature == signature
+
+    hex::encode(hmac.result().code()) == signature
 }
 
 fn main() {

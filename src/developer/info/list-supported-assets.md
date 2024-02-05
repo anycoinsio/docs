@@ -10,7 +10,7 @@ You should use the <code class="hljs">id</code> field returned by this endpoint 
 **We guarantee that the ID for coins will never change.**
 </div>
 
-If you haven't found the asset you were looking for or have any other questions, please contact us at [info@anycoins.io](mailto:info@anycoins.io).
+If you haven't found the asset you were looking for or have any other questions, please contact us at [hello@anycoins.io](mailto:hello@anycoins.io).
 
 ## Request
 
@@ -39,7 +39,7 @@ Each element within the coins array is an object representing a particular coin 
 Replace the `Authorization` header value with your API key.
 
 ```bash
-curl -x POST \
+curl -X POST \
     -H 'Authorization: 7e319c2a-28f7-48a1-988f-7dea7cc4c3fa' \
     https://api.anycoins.io/coins/ListCoins
 ```

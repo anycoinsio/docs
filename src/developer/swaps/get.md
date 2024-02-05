@@ -12,7 +12,7 @@ POST https://api.anycoins.io/swaps/GetSwap
 
 This method requires the unique identifier of the swap transaction in a JSON body.
 
-- `:id`: The unique identifier (UUID) of the swap transaction. **Required.**
+- `id`: The unique identifier (UUID) of the swap transaction. **Required.**
 
 ## Response Schema
 

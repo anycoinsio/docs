@@ -4,8 +4,7 @@
 <?php
 
 function verifySignature($signature, $eventJson, $signatureKey) {
-    $computedSignature = hash_hmac('sha256', $eventJson, $signatureKey);
-    return $computedSignature === $signature;
+    return hash_hmac('sha256', $eventJson, $signatureKey) == $signature;
 }
 
 // Imagine this is the JSON payload received from the webhook
@@ -21,6 +20,5 @@ $signature = '29e7a2ce38edebdb56f2320dfce06efbfcabd1c21c5e71f040877fd332993e5a';
 $isValid = verifySignature($signature, $eventJson, $signatureKey);
 
 echo "Signature valid? " . ($isValid ? "true" : "false") . "\n";
-
 ?>
 ```
